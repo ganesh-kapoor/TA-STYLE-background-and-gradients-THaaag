@@ -47,34 +47,74 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* CSS Styling */
- h1{
-    text-align: center;
-    color: #ffffff;
-    font-size: 48px;
-    font-weight: 700;
-    padding: 32px 0;
-}
+/* Custom Styles */
 body{
-    background-image: url(../images/picko2.jpg);
-    background-repeat: no-repeat;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    background: url(../images/pick01.jpeg) no-repeat;
     background-size: cover;
+    padding-bottom: 70px;
+    background-attachment: fixed;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 .container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 36px;
+}
+.flex{
     display: flex;
     justify-content: space-between;
-    padding: 36px 32px;
+    align-items: center;
+} 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.boxes{
-    width: 350px;
-    height: 150px;
-    background-color: #F84446;
+/* Header */
+.header{
+    padding: 32px 0;
+}
+h1{
+    font-size: 48px;
     text-align: center;
-    padding-top: 130px;
-    border-radius: 10px;
-    font-size: 24px;
     font-weight: 700;
+    color: #ffffff;
 }
-.pick_1{
-    text-align: center;
+/* Primary section */
+
+.box{
+    width: 30%;
+    height: 300px;
+    background-color: #ffffff;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.box1{
+    background-color: crimson;
+}
+.box2{
+    background: linear-gradient(to right, #000, crimson);
+}
+.box3{
+    background: radial-gradient(crimson, #000);
+}
+/* Secondary Section */
+.margin-top{
+    margin-top: 56px;
+}
+.big-box{
+    width: 100%;
+    background: linear-gradient( to right bottom, 
+        transparent, rgba(237, 20, 62, 0.5)), 
+        url(../images/pick02.jpeg) 50% 50% no-repeat;
+    background-size: cover;
 }
