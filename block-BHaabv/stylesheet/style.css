@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom Style */
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(31,34,47);
+    font-family: "Roboto", sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 36px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Header */
+ .header{
+    padding: 36px 0;
+    background-color: rgb(31,34,47);
+}
+.header h1{
+    font-size: 36px;
+    color: #ffffff;
+}
+.header h4{
+    font-size: 20px;
+    color: #616A89;
+}
+.btn-container span{
+    color: #7f8cb2;
+}
+.btn{
+    width: 56px;
+    height: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to right,#3DB2b9, #38D192); 
+    margin-left: 16px;
+    padding-left:5px; 
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: #202C41;
+    border-radius: 50%; 
+} 
+/* Cards */
+.card-container{
+    padding: 60px 0;
+}
+.card{
+    background-color: rgb(37,43,67);
+    padding: 32px;
+    text-align: center;
+    width: 23%;
+    position: relative; 
+    border-radius: 5px; 
+}
+.card i{
+    color: blue;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.card p{
+    color: #757FA3;
+    font-weight: 400;
+}
+.card h2{
+    font-size: 56px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1;
+}
+.card-body{
+    padding: 30px 0;
+}
+.card-body p{
+    color: rgb(185, 188, 204);
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1;
+}
+a{
+    text-decoration: none;
+}
+.card-footer, a, span{
+    margin-right: 5px;          
+}
+.card-footer span{
+    color: #38D192;
+    font-size: 12px; 
+}
+.card-footer .down{
+    color: #af4f5f;
+} 
+.border-top{
+    width: 100%;
+    height: 4px;
+    background-color: #178EF5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+} 
+.card-twitter .border-top{
+    background-color: rgb(26,161,242);
+}
+.card-instagram .border-top{
+    background: linear-gradient(to right,#F6AE6C, #E6608A);
+}
+.card-instagram i{
+    color: rgb(108,70,83);
+}
+.card-youtube .border-top{
+    background: #C33230;
+}
+.card-youtube i{
+    color: #C33230;
+}
+/* Overview */
+.overview h2{
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 16px 0;
+}
+.overview h4{
+    color: #41496E;
+}
+.overview-card {
+    width: 240px;
+    margin-bottom: 30px;
+}
+.overview-card .card-header{
+    margin-bottom: 30px;
+}
+.overview-card i{
+    width: 20px;
+}
+.overview-card h3{
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.overview-card span {
+    font-size: 12px;
+    color:#38D192;
+}
+.overview-card .up i{
+    width: 4px;
+    margin-right: 4px;
+}
